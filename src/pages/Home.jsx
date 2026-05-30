@@ -69,14 +69,15 @@ function Home() {
           <p className="text-xs text-[#D4AF37] uppercase tracking-widest font-mono mt-1">Signature Stitching & Tailoring Process</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80" alt="Master Tailor Cutting" className="w-full h-full object-cover filter brightness-75 grayscale-[20%]" />
-          </div>
           <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden md:-translate-y-4">
-            <img src="https://images.unsplash.com/photo-1558645487-f73a5a5e3734?auto=format&fit=crop&w=600&q=80" alt="Stitching Details" className="w-full h-full object-cover filter brightness-90" />
+            <img src="src/assets/images/casual/casual5.png" alt="Stitching Details" className="w-full h-full object-cover filter brightness-90" />
           </div>
           <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80" alt="Finished Stitched Dress" className="w-full h-full object-cover filter brightness-75 grayscale-[20%]" />
+            <img src="src/assets/images/bridal/bridal3.png" alt="Master Tailor Cutting" className="w-full h-full object-cover filter brightness-75 grayscale-[20%]" />
+          </div>
+          
+          <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden">
+            <img src="src/assets/images/partywear/party4.png" alt="Finished Stitched Dress" className="w-full h-full object-cover filter brightness-75 grayscale-[20%]" />
           </div>
         </div>
       </section>
