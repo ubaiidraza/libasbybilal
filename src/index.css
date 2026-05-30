@@ -1,0 +1,38 @@
+/* 1. Tailwind v4 Fix — Ab error nahi aayega */
+@import "tailwindcss";
+
+/* 2. Absolute Matte Black System */
+body {
+  background-color: #000000 !important; /* Pure solid black logo se match karne ke liye */
+  color: #FDFBF7;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 3. Shadowless & No-Glow Cards */
+.gold-border-card {
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  background-color: #000000 !important; /* Gradients khatam, solid black locked */
+  border-radius: 8px;
+  box-shadow: none !important; /* Saare inner aur outer shadows khatam */
+  transition: border-color 0.4s ease;
+}
+
+.gold-border-card:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: none !important; /* Hover par bhi koi lighting/glow nahi aayega */
+}
+
+/* 4. Text Glow Removal */
+.gold-text-glow {
+  text-shadow: none !important; /* Text ke piche se lighting khatam */
+}
+
+/* 5. Layout Shapes & Buttons */
+.arch-shape {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(90deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+}
