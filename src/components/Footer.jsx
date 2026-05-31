@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="bg-[#070707] border-t border-[#D4AF37]/10 text-[#FDFBF7]/60 text-xs font-light">
@@ -38,11 +39,47 @@ function Footer() {
               libasbybilal26@gmail.com
             </a>
           </div>
-          <div className="flex justify-center md:justify-end gap-4 text-xs pt-1">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-[#D4AF37] transition-colors font-mono tracking-wider text-[10px] uppercase">@instagram</a>
-            <span className="text-[#D4AF37]/20">•</span>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-[#D4AF37] transition-colors font-mono tracking-wider text-[10px] uppercase">@facebook</a>
-          </div>
+          <div className="flex justify-center md:justify-end gap-5 pt-2">
+
+  <a
+    href="https://www.instagram.com/libas_bybilal/"
+    target="_blank"
+    rel="noreferrer"
+    className="text-xl hover:text-[#D4AF37] transition-colors"
+  >
+    <FaInstagram />
+  </a>
+
+  <a
+    href="https://www.facebook.com/profile.php?id=61590391596427"
+    target="_blank"
+    rel="noreferrer"
+    className="text-xl hover:text-[#D4AF37] transition-colors"
+  >
+    <FaFacebookF />
+  </a>
+
+  <a
+    href="https://wa.me/923171232707"
+    target="_blank"
+    rel="noreferrer"
+    className="text-xl hover:text-[#D4AF37] transition-colors"
+  >
+    <FaWhatsapp />
+  </a>
+
+</div>
+
+<div className="text-[11px] mt-2">
+  <a
+    href="https://wa.me/923171232707"
+    target="_blank"
+    rel="noreferrer"
+    className="hover:text-[#D4AF37] transition-colors"
+  >
+    WhatsApp: 0317-1232707
+  </a>
+</div>
         </div>
 
       </div>
