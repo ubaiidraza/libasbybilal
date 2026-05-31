@@ -1,4 +1,4 @@
-import founderImage from "../assets/images/Aboutus.JPG";
+import founderImage from "../assets/images/Aboutus.jfif";
 
 function About() {
   const processTimeline = [

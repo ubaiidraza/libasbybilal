@@ -6,8 +6,8 @@ function Preloader() {
   useEffect(() => {
     // Jab poori website aur images load ho jayein, tab bhi hum 30 seconds wait karenge
     const handleLoad = () => {
-      // 30000ms = 30 Seconds ka delay taake preloader zyada der rukay
-      setTimeout(() => setLoading(false), 10000); 
+      // 30000ms = 3 Seconds ka delay taake preloader zyada der rukay
+      setTimeout(() => setLoading(false), 2000); 
     };
 
     if (document.readyState === 'complete') {
