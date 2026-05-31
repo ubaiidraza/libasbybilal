@@ -35,6 +35,7 @@ function Footer() {
           <div className="block pt-1">
             <a href="mailto:bilalwarsi174@gmail.com" className="text-[11px] font-mono text-[#FDFBF7]/80 hover:text-[#D4AF37] transition-colors break-all">
               bilalwarsi174@gmail.com
+              libasbybilal26@gmail.com
             </a>
           </div>
           <div className="flex justify-center md:justify-end gap-4 text-xs pt-1">

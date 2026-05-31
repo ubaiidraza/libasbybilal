@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 
 function Services() {
   const corporateServices = [
-    { title: 'Bridal Stitching', line: 'Lehengas, Shararas & Maxis', rates: 'From 25,000 PKR', spec: ['Fitting Trials Included', 'Dori & Lining Attachment', 'Fine Overlock & Edge Finishing'] },
-    { title: 'Luxury Wear Tailoring', line: 'Anarkalis, Pishwas & Frocks', rates: 'From 12,000 PKR', spec: ['Perfect Panels & Flares', 'Premium Seam Stitching', '2-Week Standard Delivery'] },
-    { title: 'Casual Outfits', line: 'Shalwar Kameez & Kurtis', rates: 'From 4,500 PKR', spec: ['Modern Minimalist Cuts', 'Daily Wear Stitching', 'Quick Turnaround Time'] },
+    { title: 'Simple Suit', line: 'Regular Shalwar Kameez & Kurtis', rates: 'From 1,000 PKR', spec: ['Standard Custom Stitching', 'Perfect Everyday Fitting', 'Clean Hemming & Overlock'] },
+    { title: 'Casual Outfits', line: 'Designer Shalwar Kameez & Kurtis', rates: 'From 1,500 PKR', spec: ['Modern Minimalist Cuts', 'Daily Wear Stitching', 'Quick Turnaround Time'] },
+    { title: 'Luxury Wear Tailoring', line: 'Anarkalis, Pishwas & Frocks', rates: 'From 2,500 PKR', spec: ['Perfect Panels & Flares', 'Premium Seam Stitching', '2-Week Standard Delivery'] },
+    { title: 'Bridal Stitching', line: 'Lehengas, Shararas & Maxis', rates: 'From 10,000 PKR', spec: ['Fitting Trials Included', 'Dori & Lining Attachment', 'Fine Overlock & Edge Finishing'] },
   ];
 
   return (
@@ -15,20 +16,21 @@ function Services() {
         <div className="w-16 h-[1px] bg-[#D4AF37]/40 mx-auto mt-2"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Grid structure changed to 4 columns for large screens */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {corporateServices.map((tier, idx) => (
-          <div key={idx} className="gold-border-card p-8 flex flex-col justify-between text-center relative space-y-6 group">
+          <div key={idx} className="gold-border-card p-6 flex flex-col justify-between text-center relative space-y-6 group">
             <div className="space-y-4">
               <div className="w-12 h-12 rounded-full border border-[#D4AF37]/20 flex items-center justify-center mx-auto text-xl bg-[#121212] group-hover:border-[#D4AF37] transition-all">🪡</div>
               <div>
-                <h3 className="text-2xl font-serif tracking-wide text-[#FDFBF7]">{tier.title}</h3>
-                <p className="text-[11px] font-mono text-[#D4AF37] uppercase tracking-widest mt-1">{tier.line}</p>
+                <h3 className="text-xl font-serif tracking-wide text-[#FDFBF7] min-h-[56px] flex items-center justify-center">{tier.title}</h3>
+                <p className="text-[10px] font-mono text-[#D4AF37] uppercase tracking-widest mt-1 min-h-[32px]">{tier.line}</p>
               </div>
-              <p className="text-lg font-mono text-[#FDFBF7]/90 font-bold border-y border-[#D4AF37]/10 py-2 bg-[#0d0d0d]">{tier.rates}</p>
-              <ul className="space-y-2 text-xs text-[#FDFBF7]/60 font-light pt-2">
+              <p className="text-base font-mono text-[#FDFBF7]/90 font-bold border-y border-[#D4AF37]/10 py-2 bg-[#0d0d0d]">{tier.rates}</p>
+              <ul className="space-y-2 text-xs text-[#FDFBF7]/60 font-light pt-2 text-left sm:text-center">
                 {tier.spec.map((item, i) => (
-                  <li key={i} className="flex items-center justify-center gap-2">
-                    <span className="text-[#D4AF37]">✦</span> {item}
+                  <li key={i} className="flex items-start sm:items-center justify-start sm:justify-center gap-2">
+                    <span className="text-[#D4AF37] shrink-0">✦</span> <span>{item}</span>
                   </li>
                 ))}
               </ul>
