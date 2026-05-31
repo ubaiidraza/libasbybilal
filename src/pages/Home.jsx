@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import casual5 from '../assets/images/casual/casual5.png';
+import bridal3 from '../assets/images/bridal/bridal3.png';
+import party4 from '../assets/images/partywear/party4.png';
 
 function Home() {
   const featuredServices = [
@@ -63,24 +66,42 @@ function Home() {
       </section>
 
       {/* Journey Section (Visual Layout Block) */}
-      <section className="max-w-7xl mx-auto px-6 space-y-12">
-        <div className="text-center">
-          <h2 className="text-3xl font-serif tracking-wider">The Art of Fitting</h2>
-          <p className="text-xs text-[#D4AF37] uppercase tracking-widest font-mono mt-1">Signature Stitching & Tailoring Process</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden md:-translate-y-4">
-            <img src="src/assets/images/casual/casual5.png" alt="Stitching Details" className="w-full h-full object-cover filter brightness-90" />
-          </div>
-          <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden">
-            <img src="src/assets/images/bridal/bridal3.png" alt="Master Tailor Cutting" className="w-full h-full object-cover filter brightness-75 grayscale-[20%]" />
-          </div>
-          
-          <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden">
-            <img src="src/assets/images/partywear/party4.png" alt="Finished Stitched Dress" className="w-full h-full object-cover filter brightness-75 grayscale-[20%]" />
-          </div>
-        </div>
-      </section>
+     <section className="max-w-7xl mx-auto px-6 space-y-12">
+  <div className="text-center">
+    <h2 className="text-3xl font-serif tracking-wider">
+      The Art of Fitting
+    </h2>
+    <p className="text-xs text-[#D4AF37] uppercase tracking-widest font-mono mt-1">
+      Signature Stitching & Tailoring Process
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden md:-translate-y-4">
+      <img
+        src={casual5}
+        alt="Stitching Details"
+        className="w-full h-full object-cover filter brightness-90"
+      />
+    </div>
+
+    <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden">
+      <img
+        src={bridal3}
+        alt="Master Tailor Cutting"
+        className="w-full h-full object-cover filter brightness-75 grayscale-[20%]"
+      />
+    </div>
+
+    <div className="gold-border-card p-2 aspect-[3/4] overflow-hidden">
+      <img
+        src={party4}
+        alt="Finished Stitched Dress"
+        className="w-full h-full object-cover filter brightness-75 grayscale-[20%]"
+      />
+    </div>
+  </div>
+</section>
     </div>
   );
 }

@@ -9,7 +9,7 @@ function Footer() {
         {/* Left Side: Brand Statement & Image Identity */}
         <div className="space-y-4 text-center md:text-left">
           <div className="w-20 mx-auto md:mx-0 opacity-80 filter brightness-90">
-            <img src="src/assets/images/logo/logo.png" alt="Libas by Bilal Monogram Accent" className="w-full h-auto object-contain" />
+            <img src="/logo/logo.png" alt="Libas by Bilal Monogram Accent" className="w-full h-auto object-contain" />
           </div>
           <p className="text-[11px] uppercase tracking-[0.15em] leading-relaxed max-w-xs mx-auto md:mx-0">
             Premium custom ladies tailoring and master stitching services established in Karachi.

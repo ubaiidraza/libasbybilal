@@ -27,7 +27,7 @@ function Preloader() {
         {/* Logo Image with Pulse Animation */}
         <div className="w-32 h-32 mx-auto overflow-hidden animate-pulse">
           <img 
-            src="src/assets/images/logo/loding.jfif" 
+            src="/logo/loding.jfif" 
             alt="Libas by Bilal Logo" 
             className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]"
           />
