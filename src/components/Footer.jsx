@@ -34,7 +34,7 @@ function Footer() {
           <h4 className="text-[11px] uppercase tracking-[0.2em] text-[#D4AF37] font-medium font-mono">Contact & Follow</h4>
           <div className="block pt-1">
             <a href="mailto:bilalwarsi174@gmail.com" className="text-[11px] font-mono text-[#FDFBF7]/80 hover:text-[#D4AF37] transition-colors break-all">
-              bilalwarsi174@gmail.com
+              bilalwarsi174@gmail.com &
               libasbybilal26@gmail.com
             </a>
           </div>
