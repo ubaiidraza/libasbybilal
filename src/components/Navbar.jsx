@@ -12,7 +12,7 @@ function Navbar() {
         <Link to="/" className="flex items-center group py-1">
           <div className="w-24 sm:w-28 md:w-32 overflow-hidden transition-all duration-300 transform group-hover:scale-[1.02]">
             <img 
-              src="src/assets/images/logo.png" 
+              src="src/assets/images/logo/logo.png" 
               alt="Libas by Bilal Premium Luxury Logo" 
               className="w-full h-auto object-contain filter brightness-110 drop-shadow-[0_2px_10px_rgba(212,175,55,0.2)]"
             />
